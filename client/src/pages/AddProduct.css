@@ -1,0 +1,110 @@
+.admin-container {
+    font-family: Arial, sans-serif;
+    margin: 1px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.admin-header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.admin-main {
+    flex: 1;
+    display: flex;
+}
+
+
+
+.admin-sidebar {
+    font-size: 18px;
+    margin: 0;
+    padding: 10px;
+    border: 2px solid #333; 
+    background-color: rgb(177, 177, 177);
+    text-align: center;
+    border-radius: 5px;
+}
+
+
+
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+.form-group{
+    margin: 20px;
+    
+}
+form {
+    max-width: 500px; 
+    margin: auto;
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    border: 1px solid #5e5757; 
+    border-radius: 2px;
+    background-color: #fff;
+}
+
+button {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+.admin-main {
+        flex-direction: column;
+    }
+
+    .admin-sidebar {
+        width: auto;
+        text-align: center;
+    }
+
+    .admin-content {
+        width: auto;
+        margin-top: 10px;
+    }
+
+    form {
+        width: 90%;
+    }
+    .form-group{
+        margin:  5px;
+    }
+}
